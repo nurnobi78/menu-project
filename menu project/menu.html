@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Menu</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu {
+            display: none;
+        }
+        .dropdown:hover .dropdown-menu-2 {
+            display: block;
+        }
+        .dropdown-menu-2 {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-800">
+    <nav class="bg-red-600 text-white">
+        <ul class="flex space-x-4 p-4">
+            <li class="dropdown relative">
+                <a href="#" class="hover:bg-red-700 p-2">Home</a>
+            </li>
+            <li class="dropdown relative">
+                <a href="#" class="hover:bg-red-700 p-2">WordPress</a>
+                <ul class="dropdown-menu absolute bg-red-600 text-white mt-2 space-y-2 p-2">
+                    <li><a href="#" class="hover:bg-red-700 p-2 block">Themes</a></li>
+                    <li><a href="#" class="hover:bg-red-700 p-2 block">Plugins</a></li>
+                    <li class="dropdown relative">
+                        <a href="#" class="hover:bg-red-700 p-2 block bg-red-700">Tutorials</a>
+                        <ul class="dropdown-menu-2 absolute bg-red-600 text-white mt-2 space-y-2 p-2 left-full top-0">
+                            <li><a href="#" class="hover:bg-red-700 p-2 block">Stuff</a></li>
+                            <li><a href="#" class="hover:bg-red-700 p-2 block">Things</a></li>
+                            <li><a href="#" class="hover:bg-red-700 p-2 block">Other Stuff</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown relative">
+                <a href="#" class="hover:bg-red-700 p-2">Graphic Design</a>
+            </li>
+            <li class="dropdown relative">
+                <a href="#" class="hover:bg-red-700 p-2">Inspiration</a>
+            </li>
+            <li class="dropdown relative">
+                <a href="#" class="hover:bg-red-700 p-2">Contact</a>
+            </li>
+            <li class="dropdown relative">
+                <a href="#" class="hover:bg-red-700 p-2">About</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
